@@ -1,0 +1,18 @@
+# 很多中间文件都不保存
+*.mp4
+*.asv
+*.swap
+*.[oa]
+*~
+*.csv
+*.doc
+*.docx
+*.7z
+*.zip
+# png 为重要文件，git保存
+#*.png
+# jpg 为不重要文件，git不保存
+*.jpg
+*.mat
+*.tdms
+*.tdms_index

@@ -9,12 +9,11 @@ import numpy as np
 import time
 
 
-def fit_units(df):
+def fit_units(df,t_base = "2019/10/01 00:00:00"):
 #     unit I and U
     df["Ic"] = df["Ic"]*10
     df["Uce"] = df["Uce"]*30-1.65
     # reset time base
-    t_base = "2019/10/01 00:00:00"
     stamp_base = time.mktime(time.strptime(t_base,"%Y/%m/%d %H:%M:%S"))
     df["t"] = df["t"]-stamp_base
     # round to meaningful values
